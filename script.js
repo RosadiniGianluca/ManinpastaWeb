@@ -5,19 +5,26 @@ document.addEventListener("DOMContentLoaded", function() {
     const galleriaButton = document.querySelector("nav a[href='#galleria']");
 
     // Imposta l'azione di clic per il pulsante Home
-    homeButton.addEventListener("click", function(event) {
-        event.preventDefault(); // Previeni il comportamento predefinito del link
-        window.location.href = "../html/index.html"; // Cambia pagina
-    });
+    if (homeButton) {
+        homeButton.addEventListener("click", function(event) {
+            event.preventDefault(); // Previeni il comportamento predefinito del link
+            window.location.href = "index.html"; // Cambia pagina
+        });
+    }
+
     // Imposta l'azione di clic per il pulsante Menu
-    menuButton.addEventListener("click", function(event) {
-        event.preventDefault(); // Previeni il comportamento predefinito del link
-        window.location.href = "../html/menu.html"; // Cambia pagina
-    });
+    if (menuButton) {
+        menuButton.addEventListener("click", function(event) {
+            event.preventDefault(); // Previeni il comportamento predefinito del link
+            window.location.href = "menu.html"; // Cambia pagina
+        });
+    }
 
     // Imposta l'azione di clic per il pulsante Galleria
-    galleriaButton.addEventListener("click", function(event) {
-        event.preventDefault(); // Previeni il comportamento predefinito del link
-        window.location.href = "../html/gallery.html"; // Cambia pagina
-    });
+    if (galleriaButton) {
+        galleriaButton.addEventListener("click", function(event) {
+            event.preventDefault(); // Previeni il comportamento predefinito del link
+            window.location.href = "gallery.html"; // Cambia pagina
+        });
+    }
 });
