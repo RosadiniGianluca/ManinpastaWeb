@@ -24,7 +24,8 @@ header {
     background-color: #444;
     color: #444;
     text-align: center;
-    padding: 150px;
+    padding: 20% 10%;
+    width:100%;
 }
 .header-logo {
     width: 80%; 
@@ -114,6 +115,22 @@ nav a:hover {
     width: 600px;
     display: block;
 }
+.image-gallery{
+    background-color: #fff;
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 600px;
+    display: block;
+}
+.h2-gallery {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 15px auto;
+    text-align: center; /* Centra il testo */
+    display: block; /* Imposta l'elemento come block-level */
+}
 /* Footer */
 footer {
     background-color: #333;
@@ -121,4 +138,26 @@ footer {
     text-align: center;
     padding: 20px;
     width: 100%;
+}
+
+/* Media Queries per la versione mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 10% 5%; /* Ridurre il padding su schermi più piccoli */
+    }
+    
+    header h1 {
+        font-size: 1.8rem; /* Ridurre la dimensione del font per dispositivi più piccoli */
+    }
+}
+
+/* Ulteriori ottimizzazioni per schermi molto piccoli */
+@media (max-width: 480px) {
+    header {
+        padding: 8% 5%;
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Ancora più piccolo per dispositivi extra small */
+    }
 }
