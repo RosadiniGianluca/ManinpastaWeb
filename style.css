@@ -308,16 +308,13 @@ footer {
 }
 
 .index-menu-button {
-    display: flex;
-    justify-content: center; /* Centra orizzontalmente */
-    align-items: center; /* Centra verticalmente */
     background-color: #444;
-    padding: 15px;
-    margin: 5px auto; /* Aggiunge spazio sopra e sotto e centra orizzontalmente */
+    padding: 20px;
+    margin: 5px auto; 
     margin-bottom: 30px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 80%; /* Imposta una larghezza per limitare la larghezza dell'elemento */
+    width: 80%;
 }
 
 .index-menu-button:hover {
@@ -325,10 +322,9 @@ footer {
 }
 
 .index-menu-button h2{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: white;
-    padding: 10px 20px;
-    margin: 0 15px;
+    text-align: center;
 }
 
 /* Responsive design */
