@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const homeButton = document.querySelector("nav a[href='#home']");
     const menuButton = document.querySelector("nav a[href='#menu']");
     const galleriaButton = document.querySelector("nav a[href='#galleria']");
+    const menuButtonIndex = document.querySelector("div [href='#menu']");
 
     // Imposta l'azione di clic per il pulsante Home
     if (homeButton) {
@@ -25,6 +26,14 @@ document.addEventListener("DOMContentLoaded", function() {
         galleriaButton.addEventListener("click", function(event) {
             event.preventDefault(); // Previeni il comportamento predefinito del link
             window.location.href = "gallery.html"; // Cambia pagina
+        });
+    }
+
+    // Imposta l'azione di clic per il pulsante Menu
+    if (menuButtonIndex) {
+        menuButtonIndex.addEventListener("click", function(event) {
+            event.preventDefault(); // Previeni il comportamento predefinito del link
+            window.location.href = "menu.html"; // Cambia pagina
         });
     }
 });

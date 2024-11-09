@@ -118,6 +118,11 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
+.uscio-section p {
+    margin-bottom: 15px;
+    margin-top:5px;
+}
+
 /* Sezione contatti */
 .contact-section {
     display: flex;
@@ -258,7 +263,7 @@ footer {
 }
 
 
-/* Elementi indicizzati */
+/* Elementi home */
 .index-element {
     padding: 5px 0;
     margin: 0 auto 5px auto; /* Centra orizzontalmente */
@@ -271,7 +276,14 @@ footer {
     text-align: center; /* Centra il testo dell'h2 */
 }
 
+.index-element h3 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center; /* Centra il testo dell'h2 */
+}
+
 .index-element p {
+    font-size: 1.1rem;
     margin-top: 5px;
     text-align: center; /* Centra il testo dell'h2 */
 }
@@ -280,7 +292,7 @@ footer {
     display: flex;
     justify-content: center; /* Centra orizzontalmente */
     align-items: center; /* Centra verticalmente */
-    background-color: #fff;
+    background-color: #444;
     padding: 15px;
     margin: 10px auto; /* Aggiunge spazio sopra e sotto e centra orizzontalmente */
     margin-bottom: 30px;
@@ -289,6 +301,35 @@ footer {
     width: 80%; /* Imposta una larghezza per limitare la larghezza dell'elemento */
 }
 
+.index-contact-section h3 {
+    color: white;
+    padding: 10px 20px;
+    margin: 0 15px;
+}
+
+.index-menu-button {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: #444;
+    padding: 15px;
+    margin: 5px auto; /* Aggiunge spazio sopra e sotto e centra orizzontalmente */
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Imposta una larghezza per limitare la larghezza dell'elemento */
+}
+
+.index-menu-button:hover {
+    background-color: #555;
+}
+
+.index-menu-button h2{
+    font-size: 1.8rem;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 15px;
+}
 
 /* Responsive design */
 @media (max-width: 768px) {
