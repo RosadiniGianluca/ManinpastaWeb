@@ -204,13 +204,13 @@ nav a:hover {
     text-align: center;
 }
 
-/* Footer */
+/* Footer */ 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #444;
+    color: #f4f4f4;
     text-align: center;
-    padding: 20px;
-    width: 100%;
+    padding: 10px 0;
+    font-size: 0.9rem;
 }
 
 /* Centra la tabella */
