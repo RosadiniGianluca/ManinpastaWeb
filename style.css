@@ -94,6 +94,15 @@ nav a:hover {
     flex: 1;
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    body {
+        padding-top: 38px;
+    }
+}
+
 /* Sezione del menu */
 .menu-section {
     margin-bottom: 40px;
@@ -104,6 +113,11 @@ nav a:hover {
     color: #333;
     margin-bottom: 15px;
     text-align: center;
+}
+
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Sezione di app uscio */
@@ -146,8 +160,10 @@ nav a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.menu-item:hover {
-    background-color: #f4f4f4;
+.menu-item:hover h3 {
+    color: #555;
+    transform: scale(1.02);
+    transition: all 0.2s ease;
 }
 
 .menu-item h3 {
