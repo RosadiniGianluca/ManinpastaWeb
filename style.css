@@ -9,8 +9,11 @@
 
 body {
     font-family: 'Garamond', sans-serif;
-    background-color: #444;
-    color: #444;
+    background-color: #232323;
+    opacity: 1;
+    background-image:  radial-gradient(#e25d0a 0.6000000000000001px, transparent 0.6000000000000001px), radial-gradient(#e25d0a 0.6000000000000001px, #232323 0.6000000000000001px);
+    background-size: 24px 24px;
+    background-position: 0 0,12px 12px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -53,7 +56,7 @@ header h1 {
    Navbar
 ======================================================== */
 nav {
-    background-color: #333;
+    background-color: #232323;
     padding: 20px 0;
     text-align: center;
     position: fixed;
@@ -109,15 +112,16 @@ nav a:hover {
 .menu-item {
     display: flex;
     justify-content: space-between;
-    background-color: #333;
+    background-color: #262626;
     padding: 15px;
     margin: 10px 0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e25d0a;
 }
 
 .menu-item h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #f5f5f5;
 }
 
@@ -180,7 +184,7 @@ nav a:hover {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    border: 1px solid #ddd;
+    border: 1px solid #e25d0a;
 }
 
 .opening-hours-table th,
@@ -188,7 +192,7 @@ nav a:hover {
     padding: 12px 15px;
     text-align: center;
     font-size: 1rem;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #262626;
 }
 
 .opening-hours-table th:last-child,
@@ -197,7 +201,7 @@ nav a:hover {
 }
 
 .opening-hours-table thead {
-    background-color: #333;
+    background-color: #262626;
     color: #f2f2f2;
     font-weight: bold;
 }
@@ -218,7 +222,7 @@ nav a:hover {
    Footer
 ======================================================== */
 footer {
-    background-color: #333;
+    background-color: #232323;
     color: #f5f5f5;
     text-align: center;
     padding: 10px 0;
@@ -237,6 +241,7 @@ footer {
 }
 
 .index-element h2 {
+    margin: 5px 0 20px;
     font-size: 1.8rem;
     margin-top: 5px;
     color: #f5f5f5;
@@ -258,13 +263,14 @@ footer {
 }
 
 .index-menu-button {
-    background-color: #333;
+    background-color: #262626;
     padding: 20px;
     margin: 5px auto 30px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 80%;
     text-align: center;
+    border: 1px solid #e25d0a;
 }
 
 .index-menu-button:hover {
