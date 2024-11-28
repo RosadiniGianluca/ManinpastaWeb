@@ -1,4 +1,6 @@
-/* Stile generale */
+/* ========================================================
+   Stile generale
+======================================================== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,29 +9,34 @@
 
 body {
     font-family: 'Garamond', sans-serif;
-    background-color: #fffaf0;
-    color: #333;
+    background-color: #444;
+    color: #444;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     padding-top: 38px;
 }
 
-/* Header */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========================================================
+   Header
+======================================================== */
 header {
-    background-image: url('img/cover.jpg');
+    background-image: url('img/cover2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #444;
-    color: #444;
     text-align: center;
     padding: 15% 5%;
     width: 100%;
     min-height: 250px;
+    color: #222;
 }
 
 header h1 {
@@ -37,35 +44,17 @@ header h1 {
     font-size: 2.5rem;
 }
 
-/* Media Query per Schermi Medi (Tablet) */
-@media (max-width: 768px) {
-    header {
-        padding: 10% 5%;
-        min-height: 200px;
-    }
-}
-
-/* Media Query per Schermi Piccoli (Mobile) */
-@media (max-width: 480px) {
-    header {
-        padding: 8% 5%;
-        min-height: 150px;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
-}
-
 .header-logo {
     width: 80%;
     height: auto;
 }
 
-/* Navbar */
+/* ========================================================
+   Navbar
+======================================================== */
 nav {
-    background-color: #444;
-    padding: 10px 0;
+    background-color: #333;
+    padding: 20px 0;
     text-align: center;
     position: fixed;
     top: 0;
@@ -75,19 +64,22 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #f5f5f5;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 15px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #444;
     border-radius: 5px;
 }
 
-/* Contenitore principale */
+/* ========================================================
+   Contenitore principale
+======================================================== */
 .container {
     width: 80%;
     margin: 30px auto;
@@ -98,115 +90,69 @@ nav a:hover {
     .container {
         width: 95%;
     }
-    body {
-        padding-top: 38px;
-    }
 }
 
-/* Sezione del menu */
+/* ========================================================
+   Sezione del menu
+======================================================== */
 .menu-section {
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .menu-section h2 {
     font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* Sezione di app uscio */
-.uscio-section {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.uscio-section h2 {
-    font-size: 1.8rem;
-    color: #333;
+    color: #f5f5f5;
     margin-bottom: 15px;
 }
 
-.uscio-section p {
-    margin-bottom: 15px;
-    margin-top:5px;
-}
-
-/* Sezione contatti */
-.contact-section {
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    padding: 15px;
-    margin: 10px 0;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Item del menu */
 .menu-item {
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #333;
     padding: 15px;
     margin: 10px 0;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.menu-item:hover h3 {
-    color: #555;
-    transform: scale(1.02);
-    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .menu-item h3 {
     font-size: 1.3rem;
-    margin: 0;
+    color: #f5f5f5;
 }
 
 .menu-item h2 {
     font-size: 1.1rem;
-    margin: 0;
+    color: #f5f5f5;
 }
 
 .menu-item p {
     font-size: 1rem;
-    color: #777;
-    margin: 5px 0;
+    color: #f5f5f5;
+    margin: 5px;
 }
 
 .menu-item span {
     font-weight: bold;
-    color: #333;
+    color: #f5f5f5;
 }
 
-/* Immagine del menu */
+.menu-item:hover h3 {
+    color: #f1f1f1;
+    transform: scale(1.09);
+    transition: all 0.2s ease;
+}
+
+/* ========================================================
+   Galleria immagini
+======================================================== */
+.image-gallery,
 .impasti-image {
-    background-color: #fff;
+    background-color: #f1f1f1;
     padding: 5px;
     margin: 5px auto;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-}
-
-/* Galleria immagini */
-.image-gallery {
-    background-color: #fff;
-    padding: 5px;
-    margin: 5px auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
     height: auto;
@@ -215,33 +161,28 @@ html {
 
 .h2-gallery {
     font-size: 1.8rem;
-    color: #333;
+    color: #f5f5f5;
     margin: 15px auto;
     text-align: center;
 }
 
-/* Footer */ 
-footer {
-    background-color: #444;
-    color: #f4f4f4;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 0.9rem;
-}
-
-/* Centra la tabella */
-.opening-hours-table {
-    width: 80%; /* Imposta la larghezza della tabella, puoi modificarla a piacere */
-    margin: 20px auto; /* Centra la tabella orizzontalmente */
-    border-collapse: collapse; /* Rimuove lo spazio tra le celle */
-    border: 1px solid #ddd; /* Aggiungi un bordo esterno alla tabella, se necessario */
-}
-.hours-container h2{
+/* ========================================================
+   Tabella orari
+======================================================== */
+.hours-container h2 {
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 20px;
+    color: #f5f5f5;
 }
-/* Stili per le celle della tabella */
+
+.opening-hours-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
 .opening-hours-table th,
 .opening-hours-table td {
     padding: 12px 15px;
@@ -250,100 +191,105 @@ footer {
     border-right: 1px solid #ddd;
 }
 
-/* Rimuove il bordo a destra dell'ultima colonna */
 .opening-hours-table th:last-child,
 .opening-hours-table td:last-child {
     border-right: none;
 }
 
-/* Stili per l'intestazione della tabella */
 .opening-hours-table thead {
-    background-color: #444;
-    color: #fff;
+    background-color: #333;
+    color: #f2f2f2;
     font-weight: bold;
 }
 
-/* Stili per le righe pari (seconda, quarta, ecc.) */
 .opening-hours-table tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Stili per le righe dispari (prima, terza, ecc.) */
 .opening-hours-table tbody tr:nth-child(odd) {
     background-color: #fff;
 }
 
-/* Effetto hover per le righe della tabella */
 .opening-hours-table tbody tr:hover {
     background-color: #e0f7fa;
 }
 
+/* ========================================================
+   Footer
+======================================================== */
+footer {
+    background-color: #333;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
 
-/* Elementi home */
+/* ========================================================
+   Elementi home
+======================================================== */
 .index-element {
     padding: 5px 0;
-    margin: 0 auto 5px auto; /* Centra orizzontalmente */
-    width: 80%; /* Imposta una larghezza per limitare la larghezza dell'elemento */
+    margin: 0 auto 5px auto;
+    width: 80%;
+    text-align: center;
 }
 
 .index-element h2 {
     font-size: 1.8rem;
     margin-top: 5px;
-    text-align: center; /* Centra il testo dell'h2 */
+    color: #f5f5f5;
 }
 
 .index-element h3 {
-    margin-top: 5px;
-    margin-bottom: 20px;
-    text-align: center; /* Centra il testo dell'h2 */
+    margin: 5px 0 20px;
+    color: #f5f5f5;
 }
 
 .index-element p {
     font-size: 1.1rem;
     margin-top: 5px;
-    text-align: center; /* Centra il testo dell'h2 */
+    color: #f5f5f5;
 }
 
-.index-contact-section {
-    display: flex;
-    justify-content: center; /* Centra orizzontalmente */
-    align-items: center; /* Centra verticalmente */
-    background-color: #444;
-    padding: 15px;
-    margin: 10px auto; /* Aggiunge spazio sopra e sotto e centra orizzontalmente */
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 80%; /* Imposta una larghezza per limitare la larghezza dell'elemento */
-}
-
-.index-contact-section h3 {
-    color: white;
-    padding: 10px 20px;
-    margin: 0 15px;
+.index-element a {
+    color: #f3f3f3;
 }
 
 .index-menu-button {
-    background-color: #444;
+    background-color: #333;
     padding: 20px;
-    margin: 5px auto; 
-    margin-bottom: 30px;
+    margin: 5px auto 30px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 80%;
-}
-
-.index-menu-button:hover {
-    background-color: #555;
-}
-
-.index-menu-button h2{
-    font-size: 1.7rem;
-    color: white;
     text-align: center;
 }
 
-/* Responsive design */
+.index-menu-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.index-menu-button h2 {
+    font-size: 1.6rem;
+    color: #f5f5f5;
+}
+
+.index-menu-button p {
+    font-size: 1.1rem;
+    color: #f5f5f5;
+}
+
+.index-menu-button h3 {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+}
+
+/* ========================================================
+   Media Queries
+======================================================== */
 @media (max-width: 768px) {
     header {
         padding: 10% 5%;
@@ -352,6 +298,10 @@ footer {
 
     header h1 {
         font-size: 1.8rem;
+    }
+
+    .container {
+        width: 95%;
     }
 }
 

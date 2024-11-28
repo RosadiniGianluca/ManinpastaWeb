@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Configura i pulsanti di navigazione dell'indice
     setNavigationButton("div[data-href='#menuFromIndex']", "menu.html");
+    setNavigationButton("div[data-href='#menuFromGallery']", "menu.html");
     setNavigationButton("div[data-href='#galleryFromIndex']", "gallery.html");
 
     // Configura i pulsanti di ritorno alla Home
