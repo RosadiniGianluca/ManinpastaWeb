@@ -32,17 +32,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Configura i pulsanti della navbar e altri pulsanti di navigazione
+    // Pulsanti di navigazione navbar
     setNavigationButton("nav a[href='#home']", "index.html");
     setNavigationButton("nav a[href='#menu']", "menu.html");
     setNavigationButton("nav a[href='#galleria']", "gallery.html");
+    setNavigationButton("nav a[href='#info']", "orari.html");
 
-    // Configura i pulsanti di navigazione dell'indice
-    setNavigationButton("div[data-href='#menuFromIndex']", "menu.html");
-    setNavigationButton("div[data-href='#menuFromGallery']", "menu.html");
-    setNavigationButton("div[data-href='#galleryFromIndex']", "gallery.html");
-
-    // Configura i pulsanti di ritorno alla Home
-    setNavigationButton("div[data-href='#homeFromMenu']", "index.html");
-    setNavigationButton("div[data-href='#homeFromGallery']", "index.html");
+    // Pulsanti delle sezioni
+    setNavigationButton("div[data-href='#home']", "index.html");
+    setNavigationButton("div[data-href='#menu']", "menu.html");
+    setNavigationButton("div[data-href='#galleria']", "gallery.html");
+    setNavigationButton("div[data-href='#info']", "orari.html");
 });

@@ -17,7 +17,8 @@
 <nav>
     <a href="#home">Home</a>
     <a href="#menu">Menu</a>
-    <a href="#galleria">Gallery</a>
+    <a href="#info">Info</a>
+    <a href="#galleria">Galleria</a>
 </nav>
 
 <div class="container">
@@ -185,7 +186,7 @@
         </div>
         <div class="menu-item">
             <div><h3>Nutellino</h3></div>
-            <div><p>(Mini crescione ripieno di Nutella)</p></div>
+            <div><p>Mini crescione ripieno di Nutella</p></div>
             <span>€2,50</span>
         </div>
     </div>
@@ -202,7 +203,7 @@
         <div class="menu-item">
             <div><h3>Salse</h3></div>
             <div><p>Crema di Funghi, Crema di Tartufo, Guacamole, Trito di Peperoncino, Pesto di Pistacchi.</p></div>
-            <span>+€0,50</span>
+            <div><span>+€0,50</span></div>
         </div>
         <div class="menu-item">
             <div><h3>Ogni altra aggiunta</h3></div><span>+€0,50</span>
@@ -218,13 +219,21 @@
     </div>
 
     <!-- Torna in cima -->
-    <div class="index-menu-button" id="backToTop">
+    <div class="navigation-button" id="backToTop">
         <h2>Torna in cima</h2>
     </div>
 
     <!-- Home -->
-    <div class="index-menu-button" data-href="#homeFromMenu">
+    <div class="navigation-button" data-href="#home">
         <h2>Home</h2>
+    </div>
+
+    <div data-href="#info" class="navigation-button">
+        <h2>Orari & Info</h2>
+    </div>
+
+    <div data-href="#galleria" class="navigation-button">
+        <h2>Esplora la galleria fotografica</h2>
     </div>
 
 </div>

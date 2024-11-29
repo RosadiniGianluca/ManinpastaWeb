@@ -9,11 +9,18 @@
 
 body {
     font-family: 'Garamond', sans-serif;
-    background-color: #232323;
     opacity: 1;
-    background-image:  radial-gradient(#e25d0a 0.6000000000000001px, transparent 0.6000000000000001px), radial-gradient(#e25d0a 0.6000000000000001px, #232323 0.6000000000000001px);
+    /* little dots background */
+    /*background-image:  radial-gradient(#e25d0a 0.6000000000000001px, transparent 0.6000000000000001px), radial-gradient(#e25d0a 0.6000000000000001px, #232323 0.6000000000000001px);
     background-size: 24px 24px;
-    background-position: 0 0,12px 12px;
+    background-position: 0 0,12px 12px;*/
+    /* Orange gradient background */
+    /*background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 38%, rgba(255,118,24,1) 100%);  */  
+    /*background: rgb(0,0,0);
+    background: linear-gradient(30deg, rgba(0,0,0,1) 38%, rgba(255,118,24,1) 100%);*/
+    background: rgb(149,70,0);
+    background: linear-gradient(15deg, rgba(149,70,0,1) 0%, rgba(0,0,0,1) 50%, rgba(149,70,0,1) 100%);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -56,7 +63,7 @@ header h1 {
    Navbar
 ======================================================== */
 nav {
-    background-color: #232323;
+    background-color: #111;
     padding: 20px 0;
     text-align: center;
     position: fixed;
@@ -69,8 +76,8 @@ nav {
 nav a {
     color: #f5f5f5;
     text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 15px;
+    padding: 10px 10px;
+    margin: 0 9px;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -95,6 +102,83 @@ nav a:hover {
     }
 }
 
+.navigation-button {
+    background-color: #111;
+    padding: 20px;
+    margin: 5px auto 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: center;
+    border: 1px solid #e25d0a;
+}
+
+.navigation-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.navigation-button h2 {
+    font-size: 1.6rem;
+    color: #f5f5f5;
+}
+
+.navigation-button p {
+    font-size: 1.1rem;
+    color: #f5f5f5;
+}
+
+.navigation-button h3 {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+}
+
+.navigation-button a {
+    font-size: 1.2rem;
+    color: #f3f3f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ========================================================
+   Elementi home
+======================================================== */
+.index-element {
+    padding: 5px 0;
+    margin: 0 auto 5px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.index-element h1 {
+    margin: 5px 0 20px;
+    font-size: 2.0rem;
+    margin-top: 5px;
+    color: #f5f5f5;
+}
+
+.index-element h2 {
+    margin: 5px 0 20px;
+    font-size: 1.6rem;
+    margin-top: 5px;
+    color: #f5f5f5;
+}
+
+.index-element h3 {
+    margin: 5px 0 20px;
+    color: #f5f5f5;
+}
+
+.index-element p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #f5f5f5;
+}
+
+.index-element a {
+    color: #f3f3f3;
+}
+
 /* ========================================================
    Sezione del menu
 ======================================================== */
@@ -112,39 +196,112 @@ nav a:hover {
 .menu-item {
     display: flex;
     justify-content: space-between;
-    background-color: #262626;
+    background-color: #111;
     padding: 15px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border: 1px solid #e25d0a;
 }
 
-.menu-item h3 {
-    font-size: 1.1rem;
-    color: #f5f5f5;
+.menu-item:hover {
+    background-color: #222;
+    transform: scale(1.05);
 }
 
 .menu-item h2 {
     font-size: 1.1rem;
     color: #f5f5f5;
+    margin-top: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.1rem;
+    color: #f5f5f5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
 }
 
 .menu-item p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #f5f5f5;
-    margin: 5px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .menu-item span {
-    font-weight: bold;
+
+    color: #f5f5f5;
+    margin-top: 10px;
+}
+
+/* ========================================================
+   Tabella orari
+======================================================== */
+.hours-container h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
     color: #f5f5f5;
 }
 
-.menu-item:hover h3 {
-    color: #f1f1f1;
-    transform: scale(1.09);
-    transition: all 0.2s ease;
+.opening-hours-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #e25d0a;
+}
+
+.opening-hours-table th,
+.opening-hours-table td {
+    padding: 20px 23px;
+    text-align: center;
+    font-size: 1.3rem !important;
+    border-right: 1px solid #111;
+    border-bottom: 1px solid #111 ;
+}
+
+.opening-hours-table th:last-child,
+.opening-hours-table td:last-child {
+    border-right: none;
+}
+
+.opening-hours-table thead {
+    background-color: #111;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+.opening-hours-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.opening-hours-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.opening-hours-table tbody tr:hover {
+    background-color: #e0f7fa;
+}
+
+/* ========================================================
+   Mappa google maps
+======================================================== */
+.map-container {
+    width: 80%; /* Larghezza del contenitore */
+    max-width: 600px; /* Larghezza massima */
+    margin: 20px auto; /* Centra il contenitore */
+    border: 1px solid #ff6200; /* Bordo intorno alla mappa */
+    box-shadow: 0 2px 5px rgba(255, 106, 0, 0.1); /* Effetto ombra */
+    border-radius: 5px; /* Bordo arrotondato */
+}
+
+.map-container iframe {
+    width: 100%; /* L'iframe si adatta al contenitore */
+    height: 450px; /* Altezza personalizzabile */
+    border: none; /* Rimuove i bordi predefiniti */
 }
 
 /* ========================================================
@@ -171,126 +328,15 @@ nav a:hover {
 }
 
 /* ========================================================
-   Tabella orari
-======================================================== */
-.hours-container h2 {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #f5f5f5;
-}
-
-.opening-hours-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    border: 1px solid #e25d0a;
-}
-
-.opening-hours-table th,
-.opening-hours-table td {
-    padding: 12px 15px;
-    text-align: center;
-    font-size: 1rem;
-    border-right: 1px solid #262626;
-}
-
-.opening-hours-table th:last-child,
-.opening-hours-table td:last-child {
-    border-right: none;
-}
-
-.opening-hours-table thead {
-    background-color: #262626;
-    color: #f2f2f2;
-    font-weight: bold;
-}
-
-.opening-hours-table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.opening-hours-table tbody tr:nth-child(odd) {
-    background-color: #fff;
-}
-
-.opening-hours-table tbody tr:hover {
-    background-color: #e0f7fa;
-}
-
-/* ========================================================
    Footer
 ======================================================== */
 footer {
-    background-color: #232323;
+    background-color: #111;
     color: #f5f5f5;
     text-align: center;
     padding: 10px 0;
     font-size: 0.9rem;
     font-weight: bold;
-}
-
-/* ========================================================
-   Elementi home
-======================================================== */
-.index-element {
-    padding: 5px 0;
-    margin: 0 auto 5px auto;
-    width: 80%;
-    text-align: center;
-}
-
-.index-element h2 {
-    margin: 5px 0 20px;
-    font-size: 1.8rem;
-    margin-top: 5px;
-    color: #f5f5f5;
-}
-
-.index-element h3 {
-    margin: 5px 0 20px;
-    color: #f5f5f5;
-}
-
-.index-element p {
-    font-size: 1.1rem;
-    margin-top: 5px;
-    color: #f5f5f5;
-}
-
-.index-element a {
-    color: #f3f3f3;
-}
-
-.index-menu-button {
-    background-color: #262626;
-    padding: 20px;
-    margin: 5px auto 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    text-align: center;
-    border: 1px solid #e25d0a;
-}
-
-.index-menu-button:hover {
-    background-color: #333;
-    transform: scale(1.05);
-}
-
-.index-menu-button h2 {
-    font-size: 1.6rem;
-    color: #f5f5f5;
-}
-
-.index-menu-button p {
-    font-size: 1.1rem;
-    color: #f5f5f5;
-}
-
-.index-menu-button h3 {
-    font-size: 1.2rem;
-    color: #f5f5f5;
 }
 
 /* ========================================================
