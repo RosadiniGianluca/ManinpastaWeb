@@ -64,7 +64,7 @@ header h1 {
 ======================================================== */
 nav {
     background-color: #111;
-    padding: 20px 0;
+    padding: 18px 0;
     text-align: center;
     position: fixed;
     top: 0;
@@ -78,7 +78,7 @@ nav a {
     text-decoration: none;
     padding: 10px 10px;
     margin: 0 9px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -205,8 +205,8 @@ nav a:hover {
 }
 
 .menu-item:hover {
-    background-color: #222;
-    transform: scale(1.05);
+    /*background-color: #222;*/
+    /*transform: scale(1.05);*/
 }
 
 .menu-item h2 {
